@@ -1,4 +1,3 @@
-Attribute VB_Name = "Module1"
 Sub VBAHomework()
     For Each ws In Worksheets
         ws.Activate
@@ -34,21 +33,21 @@ Sub CalculateSummary()
     Dim ticker_vol As Double
     ticker_vol = 0
     
-    Dim ticker_row As Integer
+    Dim ticker_row As Double
     ticker_row = 2
     
-    Dim price_open As Long
+    Dim price_open As Double
     price_open = Cells(2, 3).Value
     
     Dim price_close As Double
     Dim change_year As Double
     Dim change_percent As Double
     
-    Dim lastrow As Long
+    Dim lastrow As Double
     lastrow = Cells(Rows.Count, 1).End(xlUp).Row
     
-    Dim current_row As Long
-    Dim current_col As Integer
+    Dim current_row As Double
+    Dim current_col As Double
     
     For current_row = 2 To lastrow
         If Cells(current_row + 1, 1).Value <> Cells(current_row, 1).Value Then

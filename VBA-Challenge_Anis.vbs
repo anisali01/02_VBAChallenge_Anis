@@ -122,6 +122,4 @@ For current_row = 2 To lastrow_summary
     
     Next current_row
     
-    Debug.Print ActiveSheet.Name
-    
 End Sub
